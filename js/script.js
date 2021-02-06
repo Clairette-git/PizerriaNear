@@ -11,12 +11,7 @@ function Getpizza( name,size,crust,topping, total ){
 
 // proceed button
 $(document).ready(function(){
-  // $("button.proceed").click(function(){
-  //   $("button.proceed").hide();
-  //   $("#information").hide();
-  //   $("div.choise").slideDown(1000);
-  // });
-  $("button.proceed").click(function(event){
+   $("button.proceed").click(function(event){
    let pname = $(".name option:selected").val();
    let psize = $("#size option:selected").val();
    let pcrust = $("#crust option:selected").val();
@@ -153,8 +148,8 @@ $(document).ready(function(){
       $("button.addPizza").hide();
       $("button.deliver").slideDown(1000);
       $("#addedprice").slideDown(1000);
-      console.log("Your total bills is sh. "+checkoutTotal);
-      $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
+      console.log("Your total bills is RWF. "+checkoutTotal);
+      $("#pizzatotal").append("Your bill is RWF. "+checkoutTotal);
     });
 
     // home delivery button
@@ -177,7 +172,7 @@ $(document).ready(function(){
       $("#pizzatotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
-      let deliceryamount= checkoutTotal+150;
+      let deliceryamount= checkoutTotal+1500;
       console.log("Final Bill is: "+deliceryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
