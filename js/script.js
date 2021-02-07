@@ -160,7 +160,7 @@ $(document).ready(function(){
       $("#addedprice").hide();
       $("button.deliver").hide();
       $("#pizzatotal").hide();
-      let deliceryamount= checkoutTotal+150;
+      let deliceryamount= checkoutTotal+1500;
       console.log("You will pay RWF. "+deliceryamount+" on delivery");
       $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
     });
@@ -180,9 +180,10 @@ $(document).ready(function(){
 
       if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
   
-        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare RWF. "+deliceryamount);
+        $("#finallmessage").append(person+",Thank you for working with us. We have recieved your order and it will be delivered to you at "+location+ ". Prepare RWF. "+deliceryamount);
         $("#totalbill").hide();
         $("#finallmessage").slideDown(1200);
+        $("button#finish").show();
       }
       else {
         alert("Please fill in the details for delivery!");
