@@ -29,4 +29,4 @@ This is a Pizza Shop website that will help people to make order online, where t
 Email: marcletty12@gmail.com <br>
 PhoneNumber: +250788470306
 
-Live site link of the GitHub page : https://clairette-git.github.io/PizzaNearShop/
+Live site link of the GitHub page : https://clairette-git.github.io/PizerriaNear/
